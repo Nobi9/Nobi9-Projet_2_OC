@@ -1,0 +1,15 @@
+/*.main {
+
+}*/
+
+.lodging{
+    display:flex;
+    margin-bottom: 50px;
+}
+
+.activities {
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 50px;
+    max-width: 1500px
+}

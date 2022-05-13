@@ -1,0 +1,181 @@
+
+/* ========== Commun aux cards ==========*/
+
+.stars {
+    margin : 5px 0 0 10px;
+}
+
+.blue {
+    color:#0065FC;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* ========== Little cards ========== */
+
+.little-card{
+    height:199px;
+    width:246px;
+    border-radius: 15px;
+    border: solid 4px white;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.little-card img {
+    height:119px;
+    width: 238px;
+    border-top-left-radius : 12px;
+    border-top-right-radius : 12px;
+    object-fit: cover;
+}
+
+.little-card h3,
+.little-card p {
+    margin: 5px 0 3px 10px;
+}
+
+
+/* ========== wide cards (populaires) ========== */
+
+.wide-card {
+    height:144px;
+    width:333px;
+    border-radius: 15px;
+    border: solid 4px white;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.wide-card a{
+    display:flex;
+}
+
+.wide-card img {
+    height:138px;
+    width: 132px;
+    border-top-left-radius : 12px;
+    border-bottom-left-radius : 12px;
+    object-fit: cover;
+}
+
+.wide-card-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.wide-card h3,
+.wide-card p {
+    margin: 5px 0 3px 10px;
+}
+
+/* ========== big cards (activities) ========== */
+
+.big-cards{
+    height: 445px;
+    width: 303px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.big-cards img {
+    height: 388px;
+    width: 303px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+
+/* ========== twin cards (activities) ========== */
+.twin-cards {
+    height: 445px;
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --- two thirds ---*/
+
+.twin-card-two-third {
+    width: 303px;
+    height: 236px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.twin-card-two-third img {
+    width: 303px;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    
+}
+
+/* --- one third --- */
+
+.twin-card-one-third {
+    width: 303px;
+    height: 165px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.twin-card-one-third img {
+    width: 303px;
+    height: 109px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+/* --- 2of5 --- */
+
+.twin-card-2of5 {
+    width: 303px;
+    height: 195px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.twin-card-2of5 img {
+    width: 303px;
+    height: 139px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+/* --- 3of5 --- */
+.twin-card-3of5 {
+    width: 303px;
+    height: 208px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.twin-card-3of5 img {
+    width: 303px;
+    height: 152px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+/* ========== Activities cards common ========== */
+.big-cards h3,
+.twin-card-two-third h3,
+.twin-card-one-third h3,
+.twin-card-3of5 h3, 
+.twin-card-2of5 h3 {
+    margin-left: 10px;
+    font-weight: bold;
+}

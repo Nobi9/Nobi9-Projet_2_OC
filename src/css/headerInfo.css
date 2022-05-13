@@ -1,0 +1,23 @@
+
+.info {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.fa-cirle-info {
+    height: 23px;
+}
+
+.info p {
+    margin-left: 20px;
+}
+
+/*.fa-circle-info {
+    width: 23px;
+    height: 23px;
+    
+    border: solid 1px #F2F2F2;
+    border-radius: 50%;
+    color :  #0065FC;
+}*/

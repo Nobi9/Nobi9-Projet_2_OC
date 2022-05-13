@@ -1,0 +1,61 @@
+.header-filter {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*.filters-title {
+    
+}*/
+
+.filter-nav {
+    height: 100%;
+    display : flex;
+    align-items: center;
+}
+
+.filter {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: solid 2px #F2F2F2
+}
+
+.filter:hover{
+    background-color:#F2F2F2;
+    transition: 2s;
+}
+
+.fa-money-bill-wave, 
+.fa-child-reaching,
+.fa-heart,
+.fa-dog
+ {
+    height: 48px;
+    width: 48px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    color: #0065FC;
+    margin-top: -1px;
+    margin-left: -2PX;
+}
+
+
+.filter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
