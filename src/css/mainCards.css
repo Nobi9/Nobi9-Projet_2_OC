@@ -1,8 +1,16 @@
 
-/* ========== Commun aux cards ==========*/
+/* ========== Lodging cards common properties ==========*/
 
+.wide-card h3,
+.wide-card p,
+.little-card h3, 
+.little-card p,
 .stars {
-    margin : 5px 0 0 10px;
+    margin: 3% 5%;
+}
+
+.fa-star {
+    color:rgb(217, 217, 217);
 }
 
 .blue {
@@ -14,37 +22,36 @@ span {
 }
 
 
-/* ========== Little cards ========== */
+/* ========== Little cards (lodging-list)========== */
 
 .little-card{
-    height:199px;
-    width:246px;
+    width: 31%;
+    height: 30%;
     border-radius: 15px;
     border: solid 4px white;
     background-color: white;
-    margin-bottom: 30px;
     box-shadow: 0 0 10px lightgray;
 }
 
+.little-card a {
+    height: 100%;
+}
+
 .little-card img {
-    height:119px;
-    width: 238px;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
     border-top-left-radius : 12px;
     border-top-right-radius : 12px;
-    object-fit: cover;
-}
-
-.little-card h3,
-.little-card p {
-    margin: 5px 0 3px 10px;
+    
 }
 
 
-/* ========== wide cards (populaires) ========== */
+/* ========== wide cards (popular)) ========== */
 
 .wide-card {
-    height:144px;
-    width:333px;
+    height: 28%;
+    width: 100%;
     border-radius: 15px;
     border: solid 4px white;
     background-color: white;
@@ -57,125 +64,91 @@ span {
 }
 
 .wide-card img {
-    height:138px;
-    width: 132px;
+    height: 100%;
+    max-height: 130px;
+    min-width: 40%;
+    width: 40%;
     border-top-left-radius : 12px;
     border-bottom-left-radius : 12px;
     object-fit: cover;
 }
 
 .wide-card-info {
+    width: 60%;
+    padding: 1% 2%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0;
-}
-
-.wide-card h3,
-.wide-card p {
-    margin: 5px 0 3px 10px;
-}
-
-/* ========== big cards (activities) ========== */
-
-.big-cards{
-    height: 445px;
-    width: 303px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px lightgray;
-}
-
-.big-cards img {
-    height: 388px;
-    width: 303px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
 }
 
 
-/* ========== twin cards (activities) ========== */
-.twin-cards {
-    height: 445px;
-    width: 303px;
+
+
+
+
+/* ========================================= Activities ========================================= */
+
+.activities-list {
+    min-height : 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities-columns{
+    width: 22%;
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* --- two thirds ---*/
-
-.twin-card-two-third {
-    width: 303px;
-    height: 236px;
+/* ---------- Activities cards common properties ---------- */
+.activities-cards {
+    width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px lightgray;
 }
 
-.twin-card-two-third img {
-    width: 303px;
-    height: 180px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-    
-}
-
-/* --- one third --- */
-
-.twin-card-one-third {
-    width: 303px;
-    height: 165px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px lightgray;
-}
-
-.twin-card-one-third img {
-    width: 303px;
-    height: 109px;
+.activities-img {
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
 }
 
-/* --- 2of5 --- */
-
-.twin-card-2of5 {
-    width: 303px;
-    height: 195px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px lightgray;
-}
-
-.twin-card-2of5 img {
-    width: 303px;
-    height: 139px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-}
-/* --- 3of5 --- */
-.twin-card-3of5 {
-    width: 303px;
-    height: 208px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px lightgray;
-}
-
-.twin-card-3of5 img {
-    width: 303px;
-    height: 152px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-}
-
-/* ========== Activities cards common ========== */
-.big-cards h3,
-.twin-card-two-third h3,
-.twin-card-one-third h3,
-.twin-card-3of5 h3, 
-.twin-card-2of5 h3 {
-    margin-left: 10px;
+.activities-cards h3 {
+    height: 56px;
+    margin: 0;
+    line-height: 56px;
+    padding-left : 5%;
     font-weight: bold;
 }
+
+/* ---------- Big cards ---------- */
+.big-card {
+    height: 100%;
+}
+
+.big-card img {
+    height: 87%;
+}
+
+/* twin cards */
+
+.two-third img {
+    max-height: 185px;
+}
+
+.one-third img{
+    max-height: 115px;
+}
+
+.twin-3of5 img {
+    max-height: 150px;
+}
+
+.twin-2of5 img {
+    max-height: 140px;
+}
+

@@ -1,15 +1,258 @@
-/*.main {
-
-}*/
+/* ========================================= Main ========================================= */
+main {
+    width: 100%;
+    height: 60%;
+    max-height: 60%;
+}
 
 .lodging{
+    width: 100%;
+    height: 55%;
+    max-height: 55%;
     display:flex;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-bottom: 4%;
 }
 
 .activities {
+    width: 100%;
+    height: 45%;
     display:flex;
     flex-direction:column;
-    margin-bottom: 50px;
-    max-width: 1500px
+    padding-bottom: 4%;
 }
+
+/* ------------------------------ Lodging list ------------------------------ */
+
+.lodging-list{
+    width: 65%;
+    height: 100%;
+    min-height: 600px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lodging-header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.lodging-list h2 {
+    
+    font-weight: bold;
+}
+
+.little-cards {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    
+}
+
+.more {
+    height: 10%;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ------------------------------ Aside popular ------------------------------ */
+
+.popular-list {
+    width: 32.5%;
+    height: 100%;
+    min-height: 600px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.popular-list-header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-star {
+    font-size: 20px;
+}
+
+.wide-cards {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex:1;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+/* ========== Lodging cards common properties ==========*/
+
+.wide-card h3,
+.wide-card p,
+.little-card h3, 
+.little-card p,
+.stars {
+    margin: 3% 5%;
+}
+
+.fa-star {
+    color:rgb(217, 217, 217);
+}
+
+.blue {
+    color:#0065FC;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* ========== Little cards (lodging-list)========== */
+
+.little-card{
+    width: 31%;
+    height: 30%;
+    border-radius: 15px;
+    border: solid 4px white;
+    background-color: white;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.little-card a {
+    height: 100%;
+}
+
+.little-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius : 12px;
+    border-top-right-radius : 12px;
+    
+}
+
+
+/* ========== wide cards (popular)) ========== */
+
+.wide-card {
+    height: 28%;
+    width: 100%;
+    border-radius: 15px;
+    border: solid 4px white;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.wide-card a{
+    display:flex;
+}
+
+.wide-card img {
+    height: 100%;
+    max-height: 130px;
+    min-width: 40%;
+    width: 40%;
+    border-top-left-radius : 12px;
+    border-bottom-left-radius : 12px;
+    object-fit: cover;
+}
+
+.wide-card-info {
+    width: 60%;
+    padding: 1% 2%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+/* ----------------------------------------- Activities ----------------------------------------- */
+
+.activities-list {
+    min-height : 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activities-columns{
+    width: 22%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---------- Activities cards common properties ---------- */
+.activities-cards {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.activities-img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.activities-cards h3 {
+    height: 56px;
+    margin: 0;
+    line-height: 56px;
+    padding-left : 5%;
+    font-weight: bold;
+}
+
+/* ---------- Big cards ---------- */
+.big-card {
+    height: 100%;
+}
+
+.big-card img {
+    height: 87%;
+}
+
+/* ---------- twin cards ----------- */
+
+.two-third img {
+    max-height: 185px;
+}
+
+.one-third img{
+    max-height: 115px;
+}
+
+.twin-3of5 img {
+    max-height: 150px;
+}
+
+.twin-2of5 img {
+    max-height: 140px;
+}
+
+
+
+
