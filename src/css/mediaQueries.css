@@ -1,0 +1,347 @@
+/* =========================================================================================== */
+/* ========================================== Media Queries ========================================== */
+/* =========================================================================================== */
+ 
+/* Il faudra choisir format le plus adapté par rapport à la résolution et au temps de
+chargement
+Tablettes : agencement libre */
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .wrapper1 {
+        padding: 30px 10px;
+    }
+
+/* ========================== Section 1 ========================== */
+
+.lodging {
+    min-width: 769px;
+}
+
+    .lodging-list, .popular-list {
+        padding: 15px;
+    }
+
+        .little-cards {
+            min-width : 400px;
+        }
+
+            .little-card {
+                min-width : 150px;
+            }
+
+    .popular-list {
+        width: 34%
+    }
+
+        .wide-card {
+            min-width: 100px;
+        }
+
+/* ========================== Section 2 ========================== */
+
+.activities {
+    min-width : 769px;
+}
+
+}
+
+
+
+
+
+/* Smartphones */
+@media (max-width: 768px) {
+
+/* ====== Wrappers ====== */
+
+  .wrapper1 {
+    padding: 0;
+    
+  }
+  .wrapper2 {
+    min-height: 390px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+/* ============================== */
+/* ====== Global Settings ======= */
+/* ============================== */
+
+
+/* ====== Global witdhs ====== */
+
+main, .wrapper1, .wrapper2, .header, .topbar, .header-buttons, .location-form,
+.header-filter, .filter-title, .main, .lodging, .lodging-list, 
+.little-cards, .popular-list, .activities, .activities-list, 
+.activities-cards, .big-card, .twin-card, .activities-columns, 
+.activities-cards h3, .two-third img, .one-third img, .twin-3of5 img, .twin-2of5 img,
+.big-card img, .activities-img, footer
+ {
+    width: 100%;
+    max-width: 768px;
+    min-width: 300px;
+}
+
+.wrapper3, .location-form-input {
+    width: 100%;
+    max-width: 708px;
+    min-width: 240px;
+}
+
+/* ====== Global margins ====== */
+
+h2, .topbar, .wrapper2, .popular-list, .lodging-list, 
+.activities, .activities-list, footer, .stars, .little-card h3, .little-card p {
+    margin: 0;
+}
+
+.info-smartphone, .wide-card, .little-card, .more, .activities-cards {
+    margin-top: 15px;
+}
+
+/* ====== Global paddings ====== */
+
+h2 {
+    padding: 0;
+}
+
+.wrapper2, .wrapper3, .popular-list, .lodging-list, .footer-nav 
+{
+    padding: 30px 15px;
+}
+
+.header-button {
+    padding: 15px;
+}
+
+/* ====== Global fonts ====== */
+
+.popular-star {
+    font-size: 20px;
+}
+
+.wrapper2 h1, .popular-list-header h2, .lodging-header h2, .activities h2 {
+    font-size: 18px;
+}
+
+.header-button, .fa-location-dot, .filter-title p, .fa-circle-info {
+    font-size: 15px;
+}
+
+.wrapper2 p{
+    font-size: 13px;
+}
+
+/* ============================================================ */
+/* ========================== HEADER ========================== */
+/* ============================================================ */
+
+
+    /* ====== Topbar ====== */
+
+    .topbar {
+        display:flex;
+        flex-direction: column;
+    }
+    .header-logo {
+        margin: 20px 0 20px 20px;
+    }
+    .header-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header-button {
+        width: 50%;
+        border-bottom: solid 3px #f2f2f2;
+        text-align: center;
+    }
+    .header-button:hover {
+        border-bottom: solid 3px #0065FC;
+        border-top: none;
+    }
+
+    /* ====== next ====== */
+
+    .wrapper2 h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .wrapper2 p {
+        text-align: center;
+    }
+
+    .location-form {
+        height :50px;
+        min-width: 300px;
+        margin-top: 20px;
+    }
+
+    .dot-container {
+        width: 50px;
+        min-width: 50px;
+    }
+    
+
+    .location-form-submit {
+        width: 50px;
+        min-width: 50px;
+        border-radius: 15px;
+        margin-left: -20px;
+    }
+    .submit-word {
+        display: none;
+    }
+    .fa-magnifying-glass {
+        display:block;
+    }
+
+    /* ====== Filters ====== */
+
+    .header-filter {
+        min-height: 160px;
+        max-height: 600px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin: 0;
+        
+    }
+        .filter-title {
+            display: flex;
+            justify-content:flex-start;
+            margin: 15px 0;
+        }
+           
+        .filter-nav {
+            min-height: 100px;
+            justify-content: flex-start;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+            .filter {
+                height: 40px;
+                margin: 0 20px 10px 0;
+            }
+        .info-smartphone {
+            display: flex;
+            align-items: center;
+        }
+        .info-smartphone p {
+            margin: 0 0 0 20px;
+          }
+
+    .info-desktop {
+        display: none;
+    }
+    
+
+/* ============================================================ */
+/* ========================== MAIN ============================ */
+/* ============================================================ */
+
+/* ========================== Section 1 ========================== */
+  
+.lodging {
+    flex-direction: column-reverse;
+    min-height: 2000px;
+}
+    .lodging-header {
+        height: 5%;
+    }
+
+    .popular-list {
+        min-height: 550px;
+    }
+
+        .popular-star {
+            color: black;
+        }
+
+    .lodging-list {
+        background-color: white;
+    }   
+        .lodging-header h2 {
+            height : 50px;
+            line-height: 50px;
+        }
+        .little-cards {
+            height: 90%;
+            flex-direction: column;
+        }
+            .little-card {
+                width: 100%;
+                height: 210px;
+                min-height: 210px;
+            }
+
+            .little-card img {
+                height: 55%;
+            }
+
+            .little-card-info {
+                padding: 3% 3%;
+                height: 42%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+        .more {
+            height: 5%;
+        }
+
+  /* ========================== Section 2 ========================== */
+
+    .activities h2 {
+        height : 50px;
+        line-height: 50px;
+    }
+
+    .activities-list {
+      min-height: 1250px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+        .activities-columns{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: 450px;
+        }
+            .activities-cards, .big-card, .twin-card {
+                height: 210px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px lightgray;
+            }
+
+                .two-third img, .one-third img, .twin-3of5 img, .twin-2of5 img,
+                .big-card img, .activities-img {
+                height: 150px;
+                max-height: none;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                object-fit: cover;
+                }
+
+                .activities-cards h3 {
+                height: 56px;
+                margin: 0;
+                line-height: 56px;
+                padding-left : 5%;
+                font-weight: bold;
+                }
+
+/* ============================================================ */
+/* ========================== FOOTER =========================== */
+/* ============================================================ */
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

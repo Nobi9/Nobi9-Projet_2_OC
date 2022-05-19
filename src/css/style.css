@@ -8,6 +8,10 @@
 
 /* ========================================= General ========================================= */
 
+/* ============================== */
+/* ====== Global Settings ======= */
+/* ============================== */
+
 * {
   text-decoration: none;
   list-style: none;
@@ -18,7 +22,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: 'Raleway';
-  font-size: 13px;
+  font-size: 12px;
 }
 
 button {
@@ -27,239 +31,488 @@ button {
   cursor: pointer;
 }
 
-a{
-  color: black;
+/* ====== Global witdhs ====== */
+
+
+.wrapper1, .header, footer, main, .lodging, .activities {
+    width: 100%;
+    max-width: 1500px;
+    min-width: 992px;
 }
 
-.wrapper {
-  width:100%;
-  min-width: 1024px;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 50px 50px 0 50px;
+/* ====== Global margins ====== */
+
+.wrapper1, .submit-word, footer {
+    margin: 0 auto;
+}
+
+.location-form-submit, .filter-title, .filter-title p, .lodging-header h2,
+ .popular-list-header, .popular-list-header h2, .activities-cards h3 {
+  margin: 0;
+}
+
+/* margin top */
+.info-desktop, .more, .little-card {
+  margin-top: 20px;
+}
+
+/* margin right*/
+
+/* margin bottom */
+.location-form, .header-filter {
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 18px
+  margin : 0 0 10px 0;
 }
 
-h2, h3, h4 {
-  font-size: 18px;
+.subtitle {
+  margin: 0 0 20px 0;
+}
+
+/* margin left */
+.info-desktop p, .header-logo, .filter {
+  margin: 0 0 0 20px;
+}
+
+/* ====== Global paddings ====== */
+
+.location-form-submit {
+    padding: 0;
+}
+
+.lodging-list, .popular-list {
+  padding: 30px;
+}
+
+.wrapper1 {
+  padding: 35px 35px 0px 35px;
+}
+
+.wrapper2 {
+  padding: 30px 0px;
+}
+
+.wrapper3 {
+  padding: 50px 0px;
+}
+
+/* ====== Global fonts ====== */
+
+a, .location-form-input {
+  color: black;
+}
+
+.location-form-submit {
+  color: #fff;
+}
+
+.fa-star {
+  color:rgb(217, 217, 217);
+}
+
+.header-button:hover, .blue {
+  color: #0065FC;
+}
+
+
+h1, h2, h3, h4, .location-form-input, .filter-title, .lodging-header h2, .more, span {
   font-weight: bold;
 }
 
-p {
-  font-size: 13px;
+.popular-star {
+    font-size: 20px;
+}
+
+
+h1, h2, .fa-cirle-info, .more {
+    font-size: 15px;
+}
+
+h3, h4, p, .fa-location-dot, .wide-card h3,
+.wide-card p, .little-card h3,  .little-card p, .stars  {
+    font-size: 13px;
 }
 
 /* ========================================== Header ========================================= */
 
 /*  ------------------------------ Topbar ------------------------------ */
-.header{
-  width: 100%;
-  height: 25%;
-  margin-bottom: 30px;
+
+  .topbar {
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    height: 20%;
+  }
+
+    .header-logo {
+      height: 40px;
+      width: 80px;
+    }
+
+    .header-button {
+      width: 162px;
+      padding: 40px;
+    }
+
+    .header-button:hover {
+    border-top: 2px solid #0065FC;
+    } 
+
+  /* ------ Formulaire de localisation ------*/
+
+  .location-form{
+    height: 35px;
+    width: 35%;
+    min-width: 350px;
+    display:flex;
+    border-radius: 20px;
+  }
+
+    .dot-container {
+      width: 35px;
+      height: 100%;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: #F2F2F2;
+      border-top-left-radius : 10px;
+      border-bottom-left-radius : 10px;
+    }
+      .fa-location-dot{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+      }
+
+    .location-form-input{
+      width: 50%;
+      height: 100%;
+      border: solid 1px #F2F2F2;
+    }
+
+    .location-form-submit {
+      width: 30%;
+      max-width: 100px;
+      height: 100%;
+      font-weight: bold;
+      background-color: #0065FC;
+      border-top-right-radius : 10px;
+      border-bottom-right-radius : 10px;
+    }
+
+      .submit-word {
+        text-align: center;
+      }
+
+      .fa-magnifying-glass {
+        display: none;
+      }
+
+/* ------ filters ------  */ 
+
+  .header-filter {
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+  }
+
+    .filter-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .filter-nav {
+      height: 100%;
+      display : flex;
+      align-items: center;
+    }
+
+      .filter {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 25px;
+        border: solid 2px rgb(217, 217, 217)
+      }
+
+      .filter:hover{
+        background-color:rgb(217, 217, 217);
+        transition: 2s;
+      }
+
+        .fa-money-bill-wave, 
+        .fa-child-reaching,
+        .fa-heart,
+        .fa-dog
+        {
+          height: 38px;
+          width: 38px;
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+          background-color: #DEEBFF;
+          border-radius: 50%;
+          color: #0065FC;
+          margin-top: -1px;
+          margin-left: -2PX;
+        }
+
+
+        .filter-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin : 0 20px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+
+  /* ------ info ------ */
+  .info-smartphone {
+    display: none;
+  }
+
+  .info-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+/* ========================================= Main ========================================= */
+
+main {
+  height: 60%;
+  max-height: 60%;
 }
 
-.topbar {
-  display: flex;
-  justify-content : space-between;
-  align-items: center;
-  height: 20%
-}
+  .lodging{
+      display:flex;
+      justify-content: space-between;
+      align-content: space-between;
+  }
 
-.header-logo {
-  height: 30px;
-  width: 60px;
-  margin-left: 15px;
-}
+  .activities {
+      display:flex;
+      flex-direction:column;
+      padding-bottom: 4%;
+  }
 
-.header-button {
-  width: 162px;
-  padding: 40px;
-}
+      /* ------ Lodging list ------ */
 
-.header-button:hover {
-border-top: 2px solid #0065FC;
-color: #0065FC;
-} 
+      .lodging-list{
+          width: 65%;
+          height: 100%;
+          min-height: 550px;
+          background-color: #F2F2F2;
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+      }
 
+          .lodging-header {
+              height: 10%;
+              display: flex;
+              align-items: center;
+          }
 
+          .little-cards {
+              height: 70%;
+              width: 100%;
+              min-width : 540px;
+              
+              display: flex;
+              flex: 1;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-content: space-around;
+              
+          }
+              .little-card{
+                  width: 31%;
+                  height: 30%;
+                  min-width: 165px;
+                  border-radius: 15px;
+                  border: solid 4px white;
+                  background-color: white;
+                  box-shadow: 0 0 10px lightgray;
+              }
+              
+                  .little-card a {
+                      height: 100%;
+                  }
+              
+                  .little-card img {
+                      width: 100%;
+                      height: 120px;
+                      object-fit: cover;
+                      border-top-left-radius : 12px;
+                      border-top-right-radius : 12px;
+                  }
 
-/* ------------------------------ Formulaire de localisation ------------------------------ */
+      /* ------ Aside popular ------ */
 
-.location-form{
-  height: 50px;
-  width: 500px;
-  display:flex;
-  border-radius: 20px;
-  margin-top: 20px;
-}
+      .popular-list {
+          width: 32.5%;
+          background-color: #F2F2F2;
+          border-radius: 15px;
+          display: flex;
+          flex-direction:column;
+          justify-content: space-between;
+      }
 
-.dot-container {
-  width: 49px;
-  height: 50px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  background-color: #F2F2F2;
-  border-top-left-radius : 10px;
-  border-bottom-left-radius : 10px;
-}
-.fa-location-dot{
-  width: 13px;
-  height: 18px;
-}
+          .popular-list-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
 
-.location-form-input{
-  width: 235px;
-  height: 49px;
-  
-  color: black;
-  font-weight: bold;
-  border: solid 1px #F2F2F2;
-}
+          .wide-cards {
+              width: 100%;
+              min-width: 240px;
+              height: 80%;
+              max-height: 460px;
+              display: flex;
+              flex:1;
+              flex-direction:column;
+              justify-content: space-around;
+          }
 
-.location-form-submit {
-  width:132px;
-  height:49px;
-  margin: 0 0 0 0;
-  padding: 0;
-  font-weight: bold;
-  color: #fff;
-  background-color: #0065FC;
-  border-top-right-radius : 10px;
-  border-bottom-right-radius : 10px;
-}
+              .wide-card {
+                  height: 28%;
+                  width: 100%;
+                  min-width: 240px;
+                  border-radius: 15px;
+                  border: solid 4px white;
+                  background-color: white;
+                  box-shadow: 0 0 10px lightgray;
+              }
+              
+                  .wide-card a{
+                      display:flex;
+                  }
+                  
+                  .wide-card img {
+                      width: 40%;
+                      height: 120px;
+                      border-top-left-radius : 12px;
+                      border-bottom-left-radius : 12px;
+                      object-fit: cover;
+                  }
+              
+                  .wide-card-info {
+                      width: 60%;
+                      padding: 1% 2%;
+                      display:flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                  }
 
-/* ------------------------------ filters ------------------------------  */ 
+          /* ------ Lodging cards common properties------ */
 
-.header-filter {
-  height: 50px;
-  display: flex;
-  align-items: center; 
-  margin-top: 20px;
-}
+          .wide-card h3,
+          .wide-card p,
+          .little-card h3, 
+          .little-card p,
+          .stars {
+              margin: 3% 3%;
+          }
 
-.filter-nav {
-  height: 100%;
-  display : flex;
-  align-items: center;
-}
+      /* ------ Activities ------ */
 
-.filter {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin-left: 20px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border: solid 2px #F2F2F2
-}
+      .activities-list {
+          min-height : 460px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
 
-.filter:hover{
-  background-color:#F2F2F2;
-  transition: 2s;
-}
+          .activities-columns{
+              width: 22%;
+              max-height: 500px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+          }
 
-.fa-money-bill-wave, 
-.fa-child-reaching,
-.fa-heart,
-.fa-dog
-{
-  height: 48px;
-  width: 48px;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  background-color: #DEEBFF;
-  border-radius: 50%;
-  color: #0065FC;
-  margin-top: -1px;
-  margin-left: -2PX;
-}
+              /* ------ Activities cards common properties ------ */
+              .activities-cards {
+                  width: 100%;
+                  border-radius: 15px;
+                  box-shadow: 0 0 10px lightgray;
+              }
 
+                  .activities-img {
+                      width: 100%;
+                      border-top-left-radius: 15px;
+                      border-top-right-radius: 15px;
+                      object-fit: cover;
+                  }
 
-.filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin : 0 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
+                  .activities-cards h3 {
+                      height: 56px;
+                      line-height: 56px;
+                      padding-left : 5%;
+                      font-weight: bold;
+                  }
 
+                  /* ------ Big cards ------ */
+                  .big-card {
+                      height: 100%;
+                  }
 
-/* ------------------------------ info ------------------------------ */
-.info {
-  display: flex;
-  margin-top: 20px;
-  align-items: center;
-}
+                      .big-card img {
+                          height: 87%;
+                      }
 
-.fa-cirle-info {
-  height: 23px;
-}
+                  /* ------ twin cards ------ */
 
-.info p {
-  margin-left: 20px;
-}
+                  .two-third img {
+                      max-height: 185px;
+                  }
 
-/* ========================================== footer ========================================== */
+                  .one-third img{
+                      max-height: 115px;
+                  }
+
+                  .twin-3of5 img {
+                      max-height: 150px;
+                  }
+
+                  .twin-2of5 img {
+                      max-height: 140px;
+                  }
+
+  /* ========================================== footer ========================================== */
 
 footer {
-  width: 100%;
-  min-width: 1024px;
-  max-width: 1440px;
   height: 10%;
-  margin: 0 auto;
   background-color: #f2f2f2;
   
   
 }
 
-.footer-nav {
-  display:flex;
-  justify-content: space-evenly;
-  padding: 5%;
-}
+  .footer-nav {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 5%;
+  }
 
-.footer-nav div {
-  width: 33%;
-}
+    .footer-nav div {
+      width: 33%;
+    }
 
-.about div, 
-.about-lodging div, 
-.assistance div {
-  min-width : 250px;
-  margin: 10px 0px;
-}
-
-
-/* =========================================================================================== */
-/* ========================================== Media Queries ========================================== */
-/* =========================================================================================== */
-
-/* Deux maquettes ont été réalisées : l’une desktop et l’autre mobile. Le
-site devra être également adapté aux formats tablette. Pour les
-tablettes, nous sommes libres de faire les adaptations nécessaires. Il
-est important qu’aucun élément ne soit coupé, et que le texte ait
-une taille suffisante.
-● Concernant les breakpoints, nous avons convenu avec le designer UI
-d’utiliser 992 px et 768 px.
-992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
-tout ce qui est en dessous de 768 pour les téléphones portables.
-● Il faut d’abord réaliser l’intégration pour les ordinateurs (autrement
-dit, en desktop first), puis les tablettes et enfin les téléphones.*/
-
-/*  Plusieurs formats et tailles d’images ont été exportés. Il faudra choisir
-le format le plus adapté par rapport à la résolution et au temps de
-chargement*/
-
-@media (min-width: 750px) and (max-width: 1024px) {
-}
-
-@media (max-width:750px) {
-}
+      .about div, 
+      .about-lodging div, 
+      .assistance div {
+        min-width : 250px;
+        margin: 10px 0px;
+      }
+    
