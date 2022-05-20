@@ -76,20 +76,25 @@ Tablettes : agencement libre */
 
 main, .wrapper1, .wrapper2, .header, .topbar, .header-buttons, .location-form,
 .header-filter, .filter-title, .main, .lodging, .lodging-list, 
-.little-cards, .popular-list, .activities, .activities-list, 
-.activities-cards, .big-card, .twin-card, .activities-columns, 
-.activities-cards h3, .two-third img, .one-third img, .twin-3of5 img, .twin-2of5 img,
-.big-card img, .activities-img, footer
+.little-cards, .popular-list, .activities, 
+ footer
  {
     width: 100%;
     max-width: 768px;
     min-width: 300px;
 }
 
-.wrapper3, .location-form-input {
+.wrapper3, .location-form-input, .footer-nav div {
     width: 100%;
     max-width: 708px;
     min-width: 240px;
+}
+
+.little-cards, .activities-list, .activities-columns, .activities-cards, .activities-cards h3, .two-third img, .one-third img, .twin-3of5 img, .twin-2of5 img,
+.big-card img, .activities-img, .big-card, .twin-card  {
+    width: 100%;
+    max-width: 768px;
+    min-width: 270px;
 }
 
 /* ====== Global margins ====== */
@@ -99,7 +104,7 @@ h2, .topbar, .wrapper2, .popular-list, .lodging-list,
     margin: 0;
 }
 
-.info-smartphone, .wide-card, .little-card, .more, .activities-cards {
+.info-smartphone, .wide-card, .little-card, .more, .activities-cards, .subtitle {
     margin-top: 15px;
 }
 
@@ -109,7 +114,11 @@ h2 {
     padding: 0;
 }
 
-.wrapper2, .wrapper3, .popular-list, .lodging-list, .footer-nav 
+.footer-nav {
+    padding: 30px;
+}
+
+.wrapper2, .wrapper3, .popular-list, .lodging-list
 {
     padding: 30px 15px;
 }
@@ -125,15 +134,15 @@ h2 {
 }
 
 .wrapper2 h1, .popular-list-header h2, .lodging-header h2, .activities h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .header-button, .fa-location-dot, .filter-title p, .fa-circle-info {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .wrapper2 p{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* ============================================================ */
@@ -178,6 +187,10 @@ h2 {
         height :50px;
         min-width: 200px;
         margin-top: 20px;
+    }
+
+    .location-form-input{
+        min-width: 150px;
     }
 
     .dot-container {
@@ -342,6 +355,6 @@ h2 {
 
   .footer-nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 }

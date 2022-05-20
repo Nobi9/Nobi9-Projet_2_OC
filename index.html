@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- width = device-width : simplifie de responsive pour smartphones vs pc -->
     <script src="https://kit.fontawesome.com/038b815f0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/style.css"/>    
     <link rel="stylesheet" href="./src/css/mediaQueries.css"/>
     <title>Booki</title>
@@ -11,7 +12,7 @@
 
 <body>
     <div class="wrapper1">
-        <header role="banner">
+        <header>
             <nav class="topbar">
                 <a href="#"><img class="header-logo" src="./src/img/logo/Booki.png" alt="logo Booki"></a>
                 <div class="header-buttons">
@@ -29,7 +30,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <input class="location-form-input" name="place" placeholder="   Marseille, France" >
-                    <button class="location-form-submit" type="submit"><p class="submit-word">Rechercher</p><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="location-form-submit" type="submit"><span class="submit-word">Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
 
                 <div class="header-filter"> 
@@ -49,27 +50,27 @@
                         </div>
                         <div class="filter">
                             <i class="fa-solid fa-dog"></i>
-                            <a href="#" class="filter-button">Animeaux autorisés</a>
+                            <a href="#" class="filter-button">Animaux autorisés</a>
                         </div>
                     </nav>
                     <div class="info-smartphone">
-                        <i class="fa-solid fa-circle-info"></i> 
+                        <div class="circle-info"><i class="fa-solid fa-info"></i></div>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
                 
                 <div class="info-desktop">
-                    <i class="fa-solid fa-circle-info"></i> 
+                    <div class="circle-info"><i class="fa-solid fa-info"></i></div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div> 
             </div>    
         </header>
 
-        <main role="main">
+        <main>
             <section id="lodging" class="lodging">
-                <article class="lodging-list">
+                <div class="lodging-list">
                     <header class="lodging-header"><h2>Hébergements à Marseille</h2></header>
-                    <div class="little-cards">
+                    <article class="little-cards">
                         <div class="little-card">
                             <a href="#">
                                 <img src="./src/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'hôtel"> <!-- préciser-->
@@ -166,19 +167,19 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </article>
                     <a class="more" href="#">Afficher plus</a> <!-- mettre un footer ?-->
-                </article>
+                </div>
 
                 <aside class="popular-list">
                     <header class="popular-list-header">
                         <h2>Les plus populaires</h2>
-                        <i class="fa-solid fa-star popular-star"></i>
+                        <i class="fa-solid fa-star popular-star" id="popular-star"></i>
                     </header>
                     <article class="wide-cards">
                         <div class="wide-card">
                             <a href="#">
-                                <img src="./src/img/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre d'hôtel à l'Hôtel Le soleil du matin Marseille">
+                                <img src="./src/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre d'hôtel à l'Hôtel Le soleil du matin Marseille">
                                 <div class="wide-card-info">
                                     <div>
                                         <h3>Hôtel Le soleil du matin</h3>
@@ -196,7 +197,7 @@
                         </div>
                         <div class="wide-card">
                             <a href="#">
-                                <img src="./src/img/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'hôtel aux chambres d'^hotes Au coeur de l'eau Marseille">
+                                <img src="./src/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'hôtel aux chambres d'^hotes Au coeur de l'eau Marseille">
                                 <div class="wide-card-info">
                                     <div>
                                         <h3>Au coeur de l'eau <br> Chambres d'hôtes</h3>
@@ -283,7 +284,7 @@
     </div>
 
     <footer>
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="navigation secondaire">
             <div class="about">
                 <h4>À propos</h4>
                 <div><a href="#">Fonctionnement du site</a></div>
